@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/css/weather.css" />
+    <script type="module" src="src/js/main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Weather Forecast</a>
+    </nav>
+    <main>
+      <h1 class="page-title">Weather Forecast</h1>
+      <div class="weather-container">
+        <div class="location-search">
+          <input type="text" id="location-input" placeholder="Enter location" />
+          <button id="search-btn">Search</button>
+        </div>
+        <div class="current-weather">
+          <h2>Current Weather</h2>
+          <div id="current-details"></div>
+        </div>
+        <div class="forecast">
+          <h2>5-Day Forecast</h2>
+          <div id="forecast-container"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

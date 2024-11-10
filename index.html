@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Agricultural Mapping</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="page-titles"> Smartsprout</h1>
+      <h2 class="page-title"> Agricultural Irrgation System</h2>
+      <div class="blocks-container">
+        <div class="block">
+          <h2>Crops</h2>
+          <select id="crops-select">
+            <option value="">Select a crop</option>
+            <option value="wheat">Wheat Fields</option>
+            <option value="rice">Rice Paddies</option>
+            <option value="corn">Corn Belt</option>
+            <option value="cotton">Cotton Plains</option>
+          </select>
+        </div>
+
+        <div class="blocks">
+          <h2>Location</h2>
+          <input type="text" placeholder="Enter Location">
+          <!-- <select id="location-select">
+            <option value="">Type location</option>
+            <option value="california">California Valley</option>
+            <option value="punjab">Punjab Fields</option>
+            <option value="brazil">Brazilian Farmland</option>
+            <option value="ukraine" >Ukraine Plains</option>
+          </select> -->
+        </div>
+
+        <div class="blocks">
+          <h2>Plot Size</h2>
+          <input type="number" placeholder="Enter Plot Size">
+          <!-- <select id="plot-select">
+            <option value="">Select a plot type</option>
+            <option value="irrigated">Irrigated Land</option>
+            <option value="rainfed">Rainfed Area</option>
+            <option value="greenhouse">Greenhouse Zone</option>
+            <option value="organic">Organic Farm</option>
+          </select> -->
+        </div>
+      </div>
+      <div id="map"></div>
+      <div class="weather-link-container">
+        <!-- <a id="weather-link" href="/page2.html" class="weather-button disabled"> -->
+          <a id="" href="/page2.html" >
+          View Weather Forecast
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

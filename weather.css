@@ -1,0 +1,160 @@
+.weather-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.location-search {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.location-search input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.location-search button {
+  padding: 0.8rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.location-search button:hover {
+  background: #357abd;
+}
+
+.current-weather {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.current-weather h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.current-weather .date {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.weather-icon {
+  margin: 1rem 0;
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.details p {
+  color: #666;
+}
+
+.forecast {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#forecast-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.forecast-day {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.forecast-day .date {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.forecast-day .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-day .temp-high {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.forecast-day .temp-low {
+  color: #0d6efd;
+  margin-left: 0.5rem;
+}
+
+.forecast-day .description {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .weather-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  #forecast-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
